@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<title>StudentSelect</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="left-menu">
+					<a href="/MyInfo">
+						<h4>OOO님,</h4>
+					</a>
+					<a href="index.html">
+						logout
+					</a>
+					<hr>
+					<div class="menu">
+						<div class="m1">
+							학생관리
+							<ul class="m2">
+								<li><a href="StudentAdd.html">학생등록</a></li>
+								<li><a href="StudentSelect.html">학생조회</a></li>
+							</ul>
+						</div>
+						<div class="m1">
+							휴가 관리
+							<ul class="m2">
+								<li><a href="AdminPage.html">최근 신청 내역</a></li>
+								<li><a href="vacation.html">휴가내역조회</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-view">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$(".m1:nth-child(2) .m2").hide();
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/admin.js"></script>
+
+</body>
+</html>

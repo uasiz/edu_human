@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+	<title>RestReport</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/student.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="left-menu">
+					<a href="/MyInfo">
+						<h4>OOO님,</h4>
+					</a>
+					<a href="index.html">
+						logout
+					</a>
+					<hr>
+					<div class="menu">
+						<div class="m1">
+							휴가 관리
+							<ul class="m2">
+								<li><a href="RestReport.html">휴가 신청</a></li>
+								<li><a href="StudentPage.html">휴가 조회</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right-view">
+					<form action="" method="post">
+						<h4>휴가 등록</h4>
+						<hr>
+						<table>
+								<tr>
+									<td>휴가 시작 날짜 </td>
+									<td><input type='date' class="rest_start" name='rest_start' placeholder="입력 해주세요."></td>
+								</tr>
+								<tr>
+									<td>휴가 끝 날짜</td>
+									<td><input type='date' class="rest_end" name='rest_end' ></td>
+								</tr>
+								<tr>
+									<td>사용할 휴가</td>
+									<td class="rest_num"></td>
+								</tr>
+								<tr>
+									<td>휴가 사유 </td>
+									<td><textarea type='text' name='rest_content' placeholder="입력 해주세요."></textarea></td>
+								</tr>
+								<tr>
+									<td>싸인</td>
+									<td><input type='text' name='sign' placeholder="Sign.."></td>
+								</tr>
+								<tr>
+									<td colspan="2"><input type="submit" value="등록하기"></td>
+								</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$(".m1:nth-child(2) .m2").hide();
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/student.js"></script>
+
+</body>
+</html>

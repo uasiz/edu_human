@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    title 학생 조회
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // ===============================================================================================
+    link(rel='icon', type='image/png', href='images/icons/favicon.ico')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/bootstrap/css/bootstrap.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/animate/animate.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/css-hamburgers/hamburgers.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/select2/select2.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='css/util.css')
+    link(rel='stylesheet', type='text/css', href='css/common.css')
+    link(rel='stylesheet', type='text/css', href='css/admin.css')
+    // ===============================================================================================
+  body
+    .limiter
+      .container-login100
+        .wrap-login100
+          include menu_admin.pug
+          .right-view
+            .title
+              img(src='images/students.png')
+            input.search(placeholder='search')
+            .board
+              table
+                tr
+                  th 학생 번호
+                  th 학생 이름
+                  th 수강 과목
+                  th 생일
+                  th 주소
+                  th 전화번호
+                  th 사용 가능한 휴가
+                  th 사용한 휴가
+                each val,index in student_result
+                  tr
+                    td #{val.stu_number}
+                    td #{val.stu_name}
+                    td #{val.sub_name}
+                    td #{val.stu_birthday}
+                    td #{val.stu_addr}
+                    td #{val.stu_phone}
+                    td #{val.available_rest}
+                    td #{val.used_rest}
+              .vacation-null(style='display: none') 검색된 내용이 존재하지 않습니다.
+      // ===============================================================================================
+      script(src='vendor/jquery/jquery-3.2.1.min.js')
+      // ===============================================================================================
+      script(src='vendor/bootstrap/js/popper.js')
+      script(src='vendor/bootstrap/js/bootstrap.min.js')
+      // ===============================================================================================
+      script(src='vendor/select2/select2.min.js')
+      // ===============================================================================================
+      script(src='vendor/tilt/tilt.jquery.min.js')
+      script.
+        $(".m1:nth-child(2) .m2").hide();
+        $('.js-tilt').tilt({
+        scale: 1.1
+        })
+      // ===============================================================================================
+      script(src='js/admin.js')

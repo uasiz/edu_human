@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="HumanRest_ver0.1" path="/HumanRest_ver0.1" reloadable="true" source="org.eclipse.jst.jee.server:HumanRest_ver0.1">
+<Resource auth="Container" 
+	driverClassName="oracle.jdbc.driver.OracleDriver" 
+	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" 
+	maxActive="500" 
+	maxIdle="1000" 
+	name="jdbc/OracleDB" 
+	password="1111" 
+	type="javax.sql.DataSource" 
+	url="jdbc:oracle:thin:@localhost:1521:orcl" 
+	username="human"/>
+</Context>
+

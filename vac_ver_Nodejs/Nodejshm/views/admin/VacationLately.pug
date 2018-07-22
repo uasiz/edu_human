@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    title AdminPage
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // ===============================================================================================
+    link(rel='icon', type='image/png', href='images/icons/favicon.ico')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/bootstrap/css/bootstrap.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/animate/animate.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/css-hamburgers/hamburgers.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='vendor/select2/select2.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='css/util.css')
+    link(rel='stylesheet', type='text/css', href='css/common.css')
+    link(rel='stylesheet', type='text/css', href='css/admin.css')
+    // ===============================================================================================
+    // ===============================================================================================
+  body
+    .limiter
+      .container-login100
+        .wrap-login100
+          include menu_admin.pug
+          .right-view
+            if(rest_result.length==0)
+              .vacation-null 신청된 휴가가 존재하지 않습니다...
+            else
+              each val,index in rest_result
+                .vacation
+                  | #{val.stu_name}님이 휴가를 신청하였습니다.
+                  span.cancle
+                    input(type='image', src='images/cancle.png', style='width:30px;height:30px', onclick="submit('"+val.stu_number+"',"+val.rest_index+",2,"+index+")")
+                  span.consent
+                    input(type='image', src='images/consent.png', style='width:30px;height:30px;', onclick="submit('"+val.stu_number+"',"+val.rest_index+",1,"+index+")")
+                  .info
+                    hr
+                    table
+                      tr
+                        td 신청 번호
+                        td 수강 과목
+                        td 학생 번호
+                        td 학생 이름
+                        td 휴가 신청일
+                        td 휴가일
+                        td 휴가 회차
+                        td 휴가 이유
+                        td 학생 서명
+                      tr
+                        td #{val.rest_index}
+                        td #{val.sub_name}
+                        td #{val.stu_number}
+                        td #{val.stu_name}
+                        td #{val.rest_request_date}
+                        td #{val.rest_date}
+                        td #{val.rest_num}회
+                        td #{val.rest_reason}
+                        td
+                          img(src=val.stu_check, width='100', height='30')
+
+    // ===============================================================================================
+    script(src='vendor/jquery/jquery-3.2.1.min.js')
+    // ===============================================================================================
+    script(src='vendor/bootstrap/js/popper.js')
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    // ===============================================================================================
+    script(src='vendor/select2/select2.min.js')
+    // ===============================================================================================
+    script(src='vendor/tilt/tilt.jquery.min.js')
+    script.
+      $('.js-tilt').tilt({
+      scale: 1.1
+      })
+      function submit(stu_number,rest_index,val,vac_index) {
+        $.ajax({
+          type: "POST",
+          url: (val==1)?"RestConsent":"RestCancle",
+          contentType: "application/x-www-form-urlencoded; charset=utf-8",
+          data: { "restIndex": rest_index,"stu_number":stu_number}
+        })
+        location.reload();
+      }
+    // ===============================================================================================
+    script(src='js/admin.js')
+    // ===============================================================================================
