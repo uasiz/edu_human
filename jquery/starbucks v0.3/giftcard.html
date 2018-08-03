@@ -1,0 +1,385 @@
+﻿<html>
+<head>
+    <title>starbucks sample test</title>
+    <link href='header/style.css' rel='stylesheet' type='text/css' />
+    <link href='footer/style.css' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="header/engine.js"></script>
+    <script src="footer/engine.js"></script>
+<style>
+    .item1 *{
+        margin:0px;
+        padding:0px;
+    }
+    body.item1{
+        position:relative;
+            left:40%; margin-left:-490px;
+            width:1350px;
+            text-align:left;
+           }	
+    
+    
+    
+    .q1{float:right;
+        width:258px;
+        margin-top:-30px;
+    }
+    
+    a.style2:link { text-decoration: none;
+             color:green;
+    }
+    a.style2:visited { text-decoration: none;
+             color:green;
+    
+    }
+    a.style2:hover{background:green; color:#ffffff;
+    }
+    
+    
+    #q1{
+        padding : 10px;
+        margin-left: -600px;
+        height: 160px;
+        width: 1350px;
+        left: 50%;
+        position: relative;
+        margin-top: 20px;
+        
+    }
+    
+    
+    #q2{
+        padding : 10px;
+        margin-left: -600px;
+        height: 160px;
+        width: 1350px;
+        left: 50%;
+        position: relative;
+        margin-top: 50px;
+    
+    }
+    #q3{
+        padding : 10px;
+        margin-left: -600px;
+        height: 160px;
+        width: 1350px;
+        left: 50%;
+        position: relative;
+        margin-top: 50px;
+    
+    }
+    
+    .line{
+        height: 220px;
+        float: left;
+        margin-right: 90px;
+        
+    
+    }
+    .line>img{
+        border:3px solid gray;
+        height: 180px;
+        width:  230px;
+    
+    }
+    #ri1{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:370px;
+        left: 80px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri2{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:370px;
+        left: 400px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri3{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:370px;
+        left: 730px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri4{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:370px;
+        left: 1060px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri5{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:600px;
+        left: 80px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri6{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:600px;
+        left: 400px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri7{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:600px;
+        left: 730px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri8{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:600px;
+        left: 1055px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri9{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:830px;
+        left: 80px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    #ri10{
+        z-index: 10;
+        width: 250px;
+        background-color:green;
+        color: white;
+        position: absolute;
+        top:830px;
+        left: 405px;
+        height: 30px;
+        border-radius:7px; 
+    }
+    
+    
+    
+    
+    </style>
+<script>
+    $(document).ready(function(){
+        
+        $("#i1").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri1").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri1").css({"background-color":"green"})
+        })
+        $("#ri1").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i2").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri2").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri2").css({"background-color":"green"})
+        })
+        $("#ri2").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i3").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri3").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri3").css({"background-color":"green"})
+        })
+        $("#ri3").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i4").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri4").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri4").css({"background-color":"green"})
+        })
+        $("#ri4").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i5").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri5").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri5").css({"background-color":"green"})
+        })
+        $("#ri5").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i6").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri6").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri6").css({"background-color":"green"})
+        })
+        $("#ri6").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i7").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri7").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri7").css({"background-color":"green"})
+        })
+        $("#ri7").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i8").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri8").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri8").css({"background-color":"green"})
+        })
+        $("#ri8").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i9").hover(function(){
+            $(this).css({border:"3px solid green"})
+            $("#ri9").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri9").css({"background-color":"green"})
+        })
+        $("#ri9").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+        $("#i10").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+            $("#ri10").css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({border:"3px solid gray"})
+            $("#ri10").css({"background-color":"green"})
+        })
+        $("#ri10").hover(function(){
+            $(this).css({"background-color":"#00b300"})
+        },function(){
+            $(this).css({"background-color":"green"})
+        })
+       
+    })
+   
+</script>   
+</head>
+<body>
+    <script src="header/html.js"></script>
+    <div class="item1">
+        
+        <div id="ri1">&nbsp;&nbsp; Lunar New Year</div>
+        <div id="ri2">&nbsp;&nbsp; Winter</div>
+        <div id="ri3">&nbsp;&nbsp; Thank You</div>
+        <div id="ri4">&nbsp;&nbsp; Birthday</div>
+        <div id="ri5">&nbsp;&nbsp; Love</div>
+        <div id="ri6">&nbsp;&nbsp; Workplace</div>
+        <div id="ri7">&nbsp;&nbsp;Friendship</div>
+        <div id="ri8">&nbsp;&nbsp; Encouragement</div>
+        <div id="ri9">&nbsp;&nbsp; Anytime</div>
+        <div id="ri10">&nbsp;&nbsp; Valentine's Days</div>
+    
+    <h1>Send a Starbucks eGift Card </h1><img class="q1" src="contents/img/스타2.JPG">
+    <br>
+    <br>
+    An eGift is a digital Starbucks Card sent via email that your recipient can redeem and enjoy in-store. 
+    Just choose an eGift design, add a personal message and the amount you'd like to give, enter an email address, then hit send.
+    <br>
+    <br>
+    Want to send a Starbucks Card via mail? <a class="style2" href="https://www.starbucks.com/shop/card/starbucks-card"><b> Buy one here.</b></a>
+    <br>
+    Looking to <a class="style2" href="www.starbucks.com/card#cardBalanceWrapper"><b>check your balance? </b></a>
+    <br>
+    <br>
+    <div>
+    <div id="q1">
+        
+          <div class="line"><img id="i1" src="contents/img/1.jpg"></div>  
+          <div class="line"><img id="i2" src="contents/img/2.jpg"></div>
+          <div class="line"><img id="i3" src="contents/img/3.jpg"></div>
+          <div class="line"><img id="i4" src="contents/img/4.jpg"></div>
+    
+    </div>
+    
+    <div id="q2">
+            <div class="line"><img id="i5" src="contents/img/5.jpg"></div>
+            <div class="line"><img id="i6" src="contents/img/6.jpg"></div>
+            <div class="line"><img id="i7" src="contents/img/7.jpg"></div>
+            <div class="line"><img id="i8" src="contents/img/8.jpg"></div>
+    
+    
+    </div>
+    
+    <div id="q3">
+            <div class="line"><img id="i9" src="contents/img/9.jpg"></div>
+            <div class="line"><img id="i10s" src="contents/img/10.jpg"></div>
+    
+    
+    </div>
+    </div>
+    </div>
+    
+    <script src="footer/html.js"></script>
+</body>
+</html>

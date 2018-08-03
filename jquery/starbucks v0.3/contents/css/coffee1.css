@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    height: 0px;
+    width: 0px;
+    clear: both;
+}
+#coffee{
+    width: 100%;
+}
+#coffee1{
+    height: 680px;
+    color: #003629;
+    background-color: #c8dcd1;
+    background-image: url('../img/first_M1.jpg');
+    background-size: 2000px 680px;
+}
+#coffee2{
+    widows: 1200px;
+    height: 680px;
+    background-color: #F1EEE9;
+}
+#coffee3{
+    height: 540px;
+    background-image: url('../img/coffee3_reserve.jpg');
+    background-size: 2000px 540px;
+}
+#coffee4{
+    margin-top: 90px;
+    color: #000000;
+}
+#coffee5{
+    height: 550px;
+    background-image: url('../img/coffee4_how_to_brew.jpg');
+    background-size: 2000px 550px;
+}
+
+#coffee1_title{
+    padding-left: 120px;
+    padding-top: 135px;
+    width: 800px;
+    font-size: 38px;
+}
+#coffee1_contents{
+    display: none;
+
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 800px;
+    font-size: 20px;
+}
+#coffee1_contents2{
+
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 800px;
+    font-size: 10px;
+}
+#coffee1_button{
+    margin-left: 120px;
+    margin-top: 35px;
+    padding: 5px;
+    width: 150px;
+    border: solid 1px #003629;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+#coffee2_left{
+    float: left;
+    width: 150px;
+    height: 218px;
+}
+#coffee2_right{
+    float: right;
+    padding-top: 100px;
+    width: 900px;
+}
+#coffee2_title{
+    padding-left: 120px;
+    padding-top: 135px;
+    width: 600px;
+    font-size: 38px;
+}
+#coffee2_contents{
+    display: none;
+    padding-left: 120px;
+    padding-top: 5px;
+    width: 600px;
+    font-size: 20px;
+}
+#coffee2_button1{
+    margin-left: 120px;
+    margin-top: 15px;
+    padding: 5px;
+    width: 150px;
+    font-size: 17px;
+    text-align: center;
+}
+#coffee2_button2{
+    margin-left: 120px;
+    margin-top: 15px;
+    padding: 5px;
+    width: 200px;
+    font-size: 17px;
+}
+#coffee3_left{
+    float: left;
+    padding-left: 180px;
+    padding-top: 100px;
+    width: 900px;
+}
+#coffee3_right{
+    float: right;
+    color: #ffffff;
+}
+#coffee3_title{
+    padding-top: 135px;
+    width: 800px;
+    font-size: 38px;
+}
+#coffee3_contents{
+    display: none;
+    padding-top: 5px;
+    width: 800px;
+    font-size: 20px;
+}
+#coffee5_left{
+    position: absolute;
+    color: #ffffff;
+}
+#coffee5_img{
+   padding-top: 280px;
+   padding-left: 100px;
+   height: 200px;
+}
+.coffee5_image{
+	margin-top:40px;
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+#coffee5_image2{
+	width:120px;
+	height:120px;
+}
+#coffee5_title{
+    padding-left: 100px;
+    padding-top: 135px;
+    width: 800px;
+    font-size: 38px;
+}
+#coffee5_contents{
+    display: none;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 800px;
+    font-size: 20px;
+}

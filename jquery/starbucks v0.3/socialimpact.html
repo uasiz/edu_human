@@ -1,0 +1,283 @@
+﻿<html>
+<head>
+    <title>starbucks sample test</title>
+    <link href='header/style.css' rel='stylesheet' type='text/css' />
+    <link href='footer/style.css' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="header/engine.js"></script>
+    <script src="footer/engine.js"></script>
+    <style>
+        .mainmain {
+            /*페이지 전체를 감싸는 div 가운데 정렬을 하기위해 사용*/
+            position: relative;
+            left: 50%;
+            margin-left: -740px;
+            width: 1600px;
+        }
+
+        .main {
+            /*메인 div 주요 컨텐츠배치*/
+            margin-left: 80px;
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            float: left;
+
+
+        }
+        a{
+            background-color: #ffffff;
+            color: #2B8815;
+        }
+        .mainImg{
+            display: none;
+        }
+        .Img1{
+            display: none;
+        }
+        .Img2{
+            display: none;
+        }
+        .Img3{
+            display: none;
+        }
+        .Img4{
+            display: none;
+        }
+        h1,
+        .h1 {
+            /*h1 사이즈를 주는 CSS*/
+            font-size: 30px;
+            line-height: 1.16;
+        }
+
+        .h_right {
+            /*오른쪽 컨텐츠가 배치되는 div*/
+            width: 500px;
+            margin-left: 20px;
+            position: relative;
+            float: left;
+            margin-top: 150px;
+        }
+
+        .st_1 {
+            /*400px크기로 오른쪽으로 마진30px를 주고 float으로 쌓음*/
+            margin-right: 30px;
+            width: 400px;
+            position: relative;
+            float: left;
+        }
+
+        .st_2 {
+            /*400px크기와 left로 쌓음*/
+            width: 400px;
+            position: relative;
+            float: left;
+        }
+
+        .st_3 {
+            /*400px크기와 left로 쌓고 오른쪽으로 마진30px를 줌*/
+            margin-right: 30px;
+            width: 400px;
+            position: relative;
+            float: left;
+        }
+
+        .st_4 {
+            /*400px크기와 left로 쌓음*/
+            width: 400px;
+            position: relative;
+            float: left;
+        }
+
+        .ho1 a:visited {
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #2B8815;
+        }
+
+        /*방문한 곳 - 기본*/
+
+        .ho1 a:link {
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #2B8815;
+        }
+
+        /*방문하지 않았던 곳 - 기본*/
+
+        .ho1 a:active {
+            text-decoration: none;
+            background-color: #2B8815;
+            color: #ffffff;
+        }
+
+        /*클릭하는 순간 - 기본*/
+
+        .ho1 a:hover {
+            text-decoration: none;
+            background-color: #2B8815;
+            color: #ffffff;
+        }
+  
+        /*링크에 마우스 포인터를 올리는 순간 - 배경색:녹색, 글자색:흰색 지정*/
+
+        .ho1 {
+            /*폰트사이즈 24에 굵기 bold*/
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .text_1 {
+            /*폰트사이즈 24지정*/
+            font-size: 24px;
+
+        }
+
+        .text_2 {
+            /*폰트사이즈 13지정*/
+            font-size: 13px;
+        }
+        .text_3 a{
+            color: #2B8815;
+        }
+        .text_3 a:visited {
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #2B8815;
+        }
+
+        /*방문한 곳 - 기본*/
+
+        .text_3 a:link {
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #2B8815;
+        }
+
+        /*방문하지 않았던 곳 - 기본*/
+
+        .text_3 a:active {
+            text-decoration: none;
+            background-color: #2B8815;
+            color: #ffffff;
+        }
+
+        /*클릭하는 순간 - 기본*/
+
+        .text_3 a:hover {
+            text-decoration: none;
+            background-color: #2B8815;
+            color: #ffffff;
+        }
+
+        /*링크에 마우스 포인터를 올리는 순간 - 배경색:녹색, 글자색:흰색 지정*/
+    </style>
+    
+<script>
+        $(document).ready(function(){
+         
+             $(".mainImg").fadeIn(3000);   
+        
+          $(".T1").click(function(){
+              $(".Img1").slideToggle("slow");
+          });
+          $(".T2").click(function(){
+              $(".Img2").slideToggle("slow");
+          });
+          $(".T3").click(function(){
+              $(".Img3").slideToggle("slow");
+             
+          });
+          $(".T4").click(function(){
+              $(".Img4").slideToggle("slow");
+          });
+        });
+        
+        </script>
+</head>
+<body>
+    <script src="header/html.js"></script>
+    <div class=mainmain>
+        <!--모든 div를 감싸는 가장큰 div -->
+        <div class=main>
+            <!--주요 컨텐츠를 담은 div -->
+            <div class=main_1>
+                <!--가장 큰 이미지와 <h1> -->
+                <h1>What is the role and responsibility of a for-profit, public company?</h1>
+                <p class=text_1>We have always believed Starbucks can – and should – have a positive impact on the communities we serve.
+                    One person, one cup and one neighborhood at a time.</p>
+                <img class=mainImg src="contents/social_impact/main.jpg">
+                <p class=text_2>As we have grown to now more than 25,000 stores in over 75 countries, so too has our commitment to create
+                    global social impact.
+                    <br>
+                    <br> So it is our vision that together we will elevate our partners, customers, suppliers and neighbors to
+                    create positive change. To be innovators, leaders and contributors to an inclusive society and a healthy
+                    environment so that Starbucks and everyone we touch can endure and thrive.</p>
+            </div>
+
+            <div class=main_2>
+                <!--이미지 2번째부터 5번째까지 들어있는 div -->
+                <div class=st_1>
+                    <!--첫번째 작은 이미지 -->
+                    <p class=ho1>
+                        <a class=T1>Source Ethically & Sustainably</a>
+                    </P>
+                    <!--마우스를 올리면 반응 -->
+                    <img class=Img1 src="contents/social_impact/4_1.jpg" width=400px; height=190px;>
+                    <!--이미지와 크기지정 -->
+                    <p class=text_2>We are committed to offering high-quality, ethically purchased and responsibly produced products.</p>
+                </div>
+
+                <div class=st_2>
+                    <!--두번째 작은이미지 -->
+                    <P class=ho1>
+                        <a class=T2>Create Opportunities</a>
+                    </P>
+                    <!--마우스를 올리면 반응 -->
+                    <img class=Img2 src="contents/social_impact/4_2.jpg" width=400px; height=190px;>
+                    <!--이미지와 크기지정 -->
+                    <p class=text_2>We are committed to investing in paths to opportunity through education, training and employment.</p>
+                </div>
+
+                <div class=st_3>
+                    <!--세번째 작은이미지 -->
+                    <P class=ho1>
+                        <a class=T3>Lead in Green Retail</a>
+                    </P>
+                    <!--마우스를 올리면 반응 -->
+                    <img class=Img3 src="contents/social_impact/4_3.jpg" width=400px; height=190px;>
+                    <!--이미지와 크기지정 -->
+                    <p class=text_2>We are committed to minimizing our environmental footprint and inspiring others to do the same.</p>
+                </div>
+
+                <div class=st_3>
+                    <!--네번째 작은 이미지 -->
+                    <P class=ho1>
+                        <a class=T4>Strengthen Communities</a>
+                    </P>
+                    <!--마우스를 올리면 반응 -->
+                    <img class=Img4 src="contents/social_impact/4_4.jpg" width=400px; height=190px;>
+                    <!--이미지와 크기지정 -->
+                    <p class=text_2>We are committed to offering Starbucks as a place for public conversation and elevating civic engagement
+                        through service and promoting voter registration.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class=h_right>
+            <!--오른쪽의 작은 컨텐츠 -->
+            <h3 class="right_h">Starbucks Global Social Impact Goals & Progress</h3>
+            <img src="contents/social_impact/우측고정.jpg">
+            <p class=text_3>
+                <a href="#">Learn about our 2016 Goals & Progress</a>
+            </p>
+
+        </div>
+    </div>
+    <script src="footer/html.js"></script>
+</body>
+</html>

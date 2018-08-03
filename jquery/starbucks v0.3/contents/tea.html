@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .tea * {
+            margin: 0px;
+            padding: 0px;
+        }
+        t {
+            font-size: 12px;
+        }
+        #tea_wrap {
+            width: 1280px;
+            left: 50%;
+            margin-left: -640px;
+            position: relative;
+        }
+        .tea a:link {
+            color: #2b8815;
+            text-decoration: none;
+        }
+        .tea a:visited {
+            color: #2b8815;
+            text-decoration: none;
+        }
+        .tea a:hover {
+            background-color: #2b8815;
+            color: #f2ffff;
+        }
+        #t_c1 {
+            width: 1280px;
+        }
+        #t_c2 {
+            width: 1280px;
+            margin-top: 40px;
+        }
+        .t_c3 {
+            width: 410px;
+            float: left;
+            margin-top: 40px;
+            margin-right: 20px;
+        }
+        .t_c4 {
+            width: 414px;
+            float: right;
+            margin-top: 40px;            
+        }
+        ul img {
+            border: 10px solid rgb(0, 0, 0, 9);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
+            width: 400px;
+            height: 300px;
+        }
+        #tea_main {
+            display: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.innerfade.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#tea_main').fadeIn(1500);
+
+            $('#fade1').innerfade({
+                animationtype: 'fade',
+                speed: 'slow',
+                timeout: 3000,
+                type: 'random_start',
+                containerheight: '300px'
+            });
+
+            $('#fade2').innerfade({
+                animationtype: 'fade',
+                speed: 'slow',
+                timeout: 3000,
+                type: 'random_start',
+                containerheight: '300px'
+            });
+
+            $('#fade3').innerfade({
+                animationtype: 'fade',
+                speed: 'slow',
+                timeout: 3000,
+                type: 'random_start',
+                containerheight: '300px'
+            });
+        })
+
+    </script>
+</head>
+
+<body>  
+<div id="tea_wrap">
+    <div class='tea'>
+    <div id="t_c1"><img src="image\t_01.png" id="tea_main"></div>
+    <div id="t_c2">
+        <h3>NEW Teavana Chestnut Praline Chai Latte</h3><br>
+        <t>Your beloved Chai gets a dash of caramelized chestnut flavor
+            and a chestnut praline topping in our <a href=#>Chestnut Praline 
+            Chai <br> Latte.</a></t>
+    </div>
+    <div class="t_c3">
+        <h3><a href=#>Explore the menu</a></h3><br>
+        
+        <ul id="fade1" style="list-style:none;">
+            <li><img src="image\t_02.png"></li>
+            <li><img src="image\t_02_02.png"></li>
+            <li><img src="image\t_02_03.png"></li>
+        </ul>
+        
+        
+        <br>
+        <t>From tea lattes to iced teas to perfectly brewed cups, discover the breadth of handcrafted teas that Starbucks offers
+        <a href=#>Find your favorite</a></t>
+    </div>
+    <div class="t_c3">
+        <h3><a href=#>Tea 101</a></h3><br>
+        
+        <ul id="fade2" style="list-style:none;">
+            <li><img src="image\t_03.png"></li>
+            <li><img src="image\t_03_02.png"></li>
+            <li><img src="image\t_03_03.png"></li>
+        </ul>
+
+        <br>
+        <t>Learn the basics of teas’ origins, our approach to blending and processing, and how to master hot, iced and matcha teas at home.
+        <a href=#>Get started</a></t>
+    </div>
+    <div class="t_c4">
+        <h3><a href=#>Shop Teavana.com</a></h3><br>
+        
+        <ul id="fade3" style="list-style:none;">
+            <li><img src="image\t_04.png"></li>
+            <li><img src="image\t_04_02.png"></li>
+            <li><img src="image\t_04_03.png"></li>
+        </ul>
+
+        <br>
+        <t>We’ve got everything you need to brew the perfect cup of tea at home. Shop loose-leaf teas, sachets, teaware and tea subscriptions. 
+        <a href=#>Shop now</a></t>
+    </div>
+    </div>
+</div>
+</body>
+
+</html>

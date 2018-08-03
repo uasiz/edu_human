@@ -1,0 +1,181 @@
+﻿<html>
+<head>
+    <title>starbucks sample test</title>
+    <link href='header/style.css' rel='stylesheet' type='text/css' />
+    <link href='footer/style.css' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="header/engine.js"></script>
+    <script src="footer/engine.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .clear {
+            clear: both;
+        }     
+        #wrap {
+            position: relative;
+            width: 1300px;
+            left: 50%;
+            margin-left: -650px;
+        }
+        #Starbucks_Menu {
+            width: 1300px;
+            height: auto;
+        }
+        #Starbucks_Menu #top {
+            height: 400px;
+        }
+        #Starbucks_Menu #top_title {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        #Starbucks_Menu #top #con{
+            width: 1300px;
+            height: 350px;
+        }
+        #Starbucks_Menu #top #con #right{
+            width: 490px;
+            height: 300px;
+            margin-top: 20px;
+            float: left;
+        }
+        #Starbucks_Menu #top #con #right img {
+            width: 489px;
+            height: 274px;
+        }
+        #Starbucks_Menu #top #con #left {
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 520px;
+            width: 791px;
+            height: 274px;
+        }
+        #Starbucks_Menu #top #con #left #l1 {
+            width: 791px;
+            height: 80px;
+            font-size: 30px;
+        }
+        #Starbucks_Menu #top #con #left #l2 {
+            width: 791px;
+            height: 194px;
+        }
+        #Starbucks_Menu #middle {
+            height: auto;
+        }
+        #Starbucks_Menu #middle_drink {
+            width: 410px;
+            float: left;
+        } 
+        #Starbucks_Menu #middle_drink .drink {
+            font-size: 25px;
+            color: green;
+        }
+        #Starbucks_Menu #middle_drink img {
+            width: 410px;
+            height: 209px;
+        }
+        #Starbucks_Menu #middle_food {
+            width: 410px;
+            margin-left: 35px;
+            float: left;
+        }
+        #Starbucks_Menu #middle_food .food {
+            font-size: 25px;
+            color: green;
+        }
+        #Starbucks_Menu #middle_food img {
+            width: 410px;
+            height: 209px;
+        }
+        #Starbucks_Menu #middle_nutrition {
+            width: 410px;
+            position: absolute;
+            margin-left: 890px
+        }
+        #Starbucks_Menu #middle_nutrition .nutrition {
+            font-size: 25px;
+            color: green;
+        }
+        #Starbucks_Menu #middle_nutrition img {
+            width: 410px;
+            height: 209px;
+        }
+        .explanation {
+            font-size: 14px;
+        }
+        b:hover{background-color: greenyellow;}
+        font:hover {background-color: greenyellow;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#img1").hover(function(){
+                $(this).animate({width:"500px",height:"290px"},300);
+            }, function() {
+                $(this).animate({width:"489px",height:"274px"},300)
+            })
+            $("#img2").hover(function(){
+                $(this).animate({width:"410px",height:"220px"},300);
+            }, function(){
+                $(this).animate({width:"398px",height:"209px"},300);
+            })
+            $("#img3").hover(function(){
+                $(this).animate({width:"412px",height:"221px"},300);
+            }, function(){
+                $(this).animate({width:"400px",height:"210px"},300);
+            }) 
+            $("#img4").hover(function(){
+                $(this).animate({width:"412px",height:"221px"},300);
+            }, function(){
+                $(this).animate({width:"400px",height:"210px"},300);
+            })          
+        }) 
+    </script>
+</head>
+<body>
+    <script src="header/html.js"></script>
+    <div id="wrap">
+        <div id="Starbucks_Menu">
+            <div id="top">
+                <div id="top_title">Starbucks Menu</div>
+                <div id="con">
+                    <div id="right">
+                        <img src="contents/img/Menu_Starbucks_Menu.PNG" id="img1">
+                    </div>
+                    <div id="left">
+                        <div id="l1">Fall, sweet fall</div>
+                        <div id="l2">With one of these in hand, the cooler days feel just right. Choose from our Pumpkin Cream Cheese Muffin or Caramelized Apple Loaf Cake.</div>
+                    </div>
+                </div>    
+            </div>
+            <div id="middle">
+                <div id="middle_drink">
+                    <p class="drink"><b>Drink</b></p><br>
+                    <img src="contents/img/Menu_drinks.png" id="img2"><br><br>
+                    <p class="explanation">Longer dats mean more time to sip something warm, like our<br>
+                    <font color="green">Salted Caramel Mocha</font> with its rich espresso, mocha and coffee-<br>
+                    nut flavors.<br><br><br><br><font color="green">See all drinks</font><br><br><br><br><br><br>
+                    <br>Menu</p>
+                </div>
+                <div id="middle_food">
+                    <p class="food"><b>Food</b></p><br>
+                    <img src="contents/img/Menu_food.png" id="img3"><br><br>
+                    <p class="explanation">The savory <font color="green">ChickenCaprese Panini</font>: slow-smoked<br>
+                    chicken, fresh mozzarella, balsamic-marinated tomatoes<br>
+                and more on soft ciabatta bread.<br><br><br><br><font color="green">See our array of sandwiches.</font></p>
+                </div>
+                <div id="middle_nutrition">
+                    <p class="nutrition"><b>Nutrition</b></p><br>
+                    <img src="contents/img/Menu_nutrition.png" id="img4"><br><br>
+                    <p class="explanation">Our <font color="green">Bacon & Gruyere</font> or <font color="green">Egg White & Red Pepper Sous<br>
+                    Vide Egg Bites</font> are protein packed and bursting with<br>
+                    flavor.<br><br><br><br><font color="green">See smart choices to fuel your day</font></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="footer/html.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+    <title>StarBucks</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/common.css">-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style >
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+        $("#main1_title").show(1000,function(){
+            $("#main1_contents").show(2000);
+        });
+        $("#main1_right_image").fadeIn(3000);
+
+        $("#main3").mouseenter(function(){
+            $("#main3_title").show(1000,function(){
+                $("#main3_contents").show(1000);
+            })
+        })
+        $("#main4").mouseenter(function(){
+            $("#main4_img").fadeIn(1000,function(){
+                $("#main4_title").show(1000,function(){
+                    $("#main4_contents").show(1000);
+                })
+            })
+        })
+
+        $("#main5").mouseenter(function(){
+            $("#main5_top_img").fadeIn(1000,function(){
+                $("#main5_top_title").show(1000,function(){
+                    $("#main5_top_contents").show(1000,function(){
+                        $("#main5_bottom_img").fadeIn(1000,function(){
+                            $("#main5_bottom_title").show(1000,function(){
+                                $("#main5_bottom_contents").show(1000,function(){
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+
+
+    })
+
+    
+  </script>
+
+</head>
+<body>
+    <contents id="main">
+        <div id="main1">
+            <div id="main1_left">
+                <div id="main1_title">
+                    Celebrate who fills your heart with our red cup
+                </div>
+                <div class="clear"></div>
+                <div id="main1_contents">
+                    <p>Good keeps giving, so let’s spread some more of it this holiday season.</p>
+                    <p>Dedicate your red cup today to someone who deserves a shout-out—
+                    <b>and you may just inspire a little goodness in return.</b></p>
+                    
+                        Share your cup with #GiveGood.
+                </div>
+                <div class="clear"></div>
+                <div id="main_button">
+                    GIVE YOUR HEART
+                </div>
+            </div><!--main_left-->
+            <div id="main1_right">
+                <img id="main1_right_image" src="img/main1_logo.png" alt="">
+            </div><!--main_right-->
+        </div><!--main1-->
+        <div id="main2">
+            <div id="main2_left">
+                <img id="main2_left_image"src="img/main2_rewards.png" alt="">
+            </div><!--main2_left-->
+            <div id="main2_right">
+                <div id="main2_title">
+                    <p>Make every sip more rewarding</p>
+                </div>
+                <div class="clear"></div>
+                <div id="main2_contents">
+                    <p>Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.</p>
+                </div>
+                <div class="clear"></div>
+                <div id="main2_button_G">
+                    JOIN NOW
+                </div>
+                <div id="main2_button_C">
+                    SIGN IN
+                </div>
+            </div><!--main2_right-->
+        </div><!--main2-->
+        <div id="main3">
+            <div class="clear"></div>
+            <div id="main3_left">
+                <img id="main3_left_image" src="img/main3_run.png" alt="">
+            </div><!--main3_left-->
+            <div id="main3_right">
+                <div id="main3_title">
+                    <b>ENJOY A $5 STARBUCKS CARD</b>
+                </div>
+                <div id="main3_contents">
+                    <p>when you buy 4 grande handcrafted beverages after 2 PM at participating stores.</p>
+                        
+                    <p>Learn more</p>
+                </div>
+            </div><!--main3_right-->
+
+        </div><!--main3-->
+        <div id="main4">
+            <div id="main4_img">
+                <img src="img/main4_people.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div id="main4_title">
+                <b>GOOD GIVES BACK</b>
+            </div>
+            <div class="clear"></div>
+            <div id="main4_contents">
+                <p>Starbucks and Spotify are donating to the charities of three iconic artists to benefit youth empowerment, education and veterans. Show your support with one of these limited-edition Starbucks Cards. Available in stores now.</p>
+            </div>
+            <div class="clear"></div>
+            <div id="main4_link">
+                Get the details
+            </div>
+        </div><!--main4-->
+        <div id="main5">
+            <div id="main5_top">
+                <div id="main5_top_img">
+                    <img src="img/main5_coffee.png" alt="">
+                </div>
+                <div class="clear"></div>
+                <div id="main5_top_title">
+                    <b>COOL TIDINGS</b>
+                </div>
+                <div class="clear"></div>
+                <div id="main5_top_contents">
+                    <p>Holiday cheer comes in three cool, creamy flavors: Caramel Brulée, Peppermint Mocha and Toasted White Chocolate Mocha Frappuccino® Blended Beverages.</p>
+                </div>    
+            </div>
+            <div class="clear"></div>
+            <div id="main5_bottom">
+                <div id="main5_bottom_img">
+                    <img src="img/main5_blend.png" alt="">
+                </div>
+                <div class="clear"></div>
+                <div id="main5_bottom_title">
+                    <b>ONE SIP STARTS THE SEASON</b>
+                </div>
+                <div class="clear"></div>
+                <div id="main5_bottom_contents">
+                    <p>With its vibrant cedary-spice notes, this blend—which includes our expertly aged Sumatran coffee—pairs well with holiday flavors and good company.</p>
+                </div>
+                <div class="clear"></div>
+                <div id="main5_bottom_link">
+                    Details
+                </div>
+            </div>
+        </div><!--main5-->
+
+    </contents>
+
+
+
+</body>
+</html>

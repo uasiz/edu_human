@@ -1,0 +1,184 @@
+﻿<html>
+<head>
+    <title>starbucks sample test</title>
+    <link href='header/style.css' rel='stylesheet' type='text/css' />
+    <link href='footer/style.css' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="contents/jquery.innerfade.js"></script>
+
+    <script src="header/engine.js"></script>
+    <script src="footer/engine.js"></script>
+    
+<style>
+        #coffeehouse{width:1500px;margin:auto; font-family: Lato,Helvetica,Arial,sans-serif; color: #3d3a35;} 
+          h1{font-weight: 400; font-size: 29px; letter-spacing:0.5px;}
+        .coffeehouse_top{margin-left: 20px;}
+        .coffeehouse_top img{width:60%; margin-bottom:1px;}
+        .coffeehouseimg{display:none;}
+        .coffeehousem1h31{width:320px;}
+        .coffeehousem2h32{width:65px;}
+        .coffeehousem3h33{width:240px;}
+        .coffeehousem4h34{width:160px;}
+        .coffeehousem1li1, .coffeehousem2li2, .coffeehousem3li3, .coffeehousem4li4{display: none;}
+        .menu_coffeehouse{float:left; margin-left: 10px; width:60%;}
+        .menu_coffeehouse h3 A:link {text-decoration:none; color:#2B8815;} 
+        .menu_coffeehouse h3 A:visited {text-decoration:none; color:#2B8815;}
+        .menu_coffeehouse h3 A:active {text-decoration:none; color:#2B8815;}
+        .menu_coffeehouse h3 A:hover {text-decoration:none;  background-color:#2b8815; color:#ffffff;}    
+        
+        
+        .menu_coffeehouse li{font-size: 14px; line-height: 20px; margin-left: -38px; color: #1d1b1b; list-style-type: none; margin-top: 18px;}
+        .menu_coffeehouse h5{line-height:20px; font-size: 14px;}
+        .menu_coffeehouse h5 A:link {text-decoration:none; color:#2B8815;}
+        .menu_coffeehouse h5 A:visited {text-decoration:none; color:#2B8815;}
+        .menu_coffeehouse h5 A:active {text-decoration:none; color:#2B8815;}
+        .menu_coffeehouse h5 A:hover {text-decoration:none;  background-color:#2b8815; color:#ffffff;}
+        
+        .menu_coffeehouse h3{color:#2B8815; font-size:25px; font-weight:bold; text-decoration:none; margin-top: 15px; margin-bottom:-5px;}
+        .coffeehousem1, .coffeehousem2, .coffeehousem3, .coffeehousem4{float:left; width:45%; margin-left:20px; margin-bottom:30px;} 
+        
+        .rightFind {float:left; width:30%; margin-left:20px;} 
+        .FindStore h3,.FindOnline h3, .jointwitter h3 {color: #1d1b1b; font-size:18px;}
+        
+        .FindStore form input{float:left; width:250px; height: 30px; border:2px solid #ededed; background-color:#ededed;}
+        .FindStore form input::-ms-input-placeholder{color:#aaa;}
+        .FindStore form input::-webkit-input-placeholder{color:#aaa;}
+        
+        form input:focus{border-color: #71b43a; outline: 0;}
+        
+        .search_button button{background:url("contents/houseimg/search.png") no-repeat 50% 50%,
+        -ms-linear-gradient(bottom,#1F760C 0,#5CA61F 40%); background:url("contents/houseimg/search.png") no-repeat 50% 50%,
+        -webkit-linear-gradient(bottom,#1F760C 0,#5CA61F 40%); background-color: #5Ca61f; 
+          border:1px solid #1f760c; width:29px; height: 29px; cursor: pointer;}
+        
+         .jointwitter A:link{text-decoration:none; color:#2B8815; font-weight:bold;}
+         .jointwitter A:visited{text-decoration:none; text-decoration:none; color:#2B8815; font-weight:bold;} 
+         .jointwitter A:active{text-decoration:none; text-decoration:none; color:#2B8815; font-weight:bold;}
+         .jointwitter A:hover{text-decoration:none; background-color:#2b8815; color:#ffffff;   font-weight:bold;}
+        
+        .jointwitter li{font-size:14px; margin-left:0px; list-style-type: none; margin-top: 18px; color: #1d1b1b;}
+        .FindStore, .jointwitter, .FindOnline{float:left;}
+        .jointwitter{margin-left:-40px;}
+        
+          .Onlineimage A:link {text-decoration:none;} 
+          .Onlineimage A:visited {text-decoration:none;}
+          .Onlineimage A:active {text-decoration:none;}
+          .Onlineimage A:hover {text-decoration:none;}
+        .Onlineimage img{height:40px; margin-right:10px;}
+        pp{margin-left: 35px;}
+        .clear{clear:both;}
+</style>
+<script>
+        
+        $(document).ready(function(){
+         
+             $(".coffeehouseimg").fadeIn(3000);   
+        
+          $(".coffeehousem1h31").hover(function(){
+              $(".coffeehousem1li1").slideToggle("slow");
+          });
+          $(".coffeehousem2h32").hover(function(){
+              $(".coffeehousem2li2").slideToggle("slow");
+          });
+          $(".coffeehousem3h33").hover(function(){
+              $(".coffeehousem3li3").slideToggle("slow");
+          });
+          $(".coffeehousem4h34").hover(function(){
+              $(".coffeehousem4li4").slideToggle("slow");
+          });
+        });
+        
+        </script>
+</head>
+<body>
+    <script src="header/html.js"></script>
+    <div id="coffeehouse"> 
+    
+      <div class="coffeehouse_top"> 
+      <h1>Coffeehouse</h1>
+      <img class="coffeehouseimg" src="contents/houseimg/coffeehouse.jpg" >
+      </div>
+    
+      <div class= "menu_coffeehouse">
+        <div class="coffeehousem1">
+            <h3 class = "coffeehousem1h31"><a href="https://www.starbucks.com/coffeehouse/wireless-internet/starbucks-digital-network"> Starbucks Digital Network</a></h3> 
+    
+    
+        <ol>
+          <li class="coffeehousem1li1">We're bringing the most interesting stuff on the web right to your comfy
+              chair. It's the Starbucks Digital Network</li>
+        </ol>
+        </div>
+        <div class="coffeehousem2">
+            <h3 class = "coffeehousem2h32"> <a href="https://www.starbucks.com/coffeehouse/wireless-internet">Wi-Fi</a></h3>
+        <ol>
+          <li class="coffeehousem2li2">Our coffee brings people together – and our Wi-Fi service helps
+              keep them connected. Learn how to surf while you sip at Starbucks.</li>
+              <li></li>
+              <li><h5><a href="https://www.starbucks.com/coffeehouse/wireless-internet">Google Wi-Fi (U.S.)</a><br>
+                <a href="https://www.starbucks.com/coffeehouse/wireless-internet/in-canada">allstream Wi-Fi (Canada)</a></h5></li>
+        </ol>
+        </div>
+        <div class="coffeehousem3">
+          <h3 class = "coffeehousem3h33"><a href="https://www.starbucks.com/coffeehouse/mobile-apps">Mobile Applications</a></h3> 
+        <ol>
+          <li class="coffeehousem3li3">You can use your phone to pay for your purchases at Starbucks. It’s fast, easy and convenient.</li>
+        </ol>
+        </div>
+        <div class="coffeehousem4">
+            <h3 class = "coffeehousem4h34"><a href="https://www.starbucks.com/coffeehouse/store-design">Store Design</a></h3>
+        <ol>
+          <li class="coffeehousem4li4">What makes a Starbucks coffeehouse such a vibrant and inviting space? 
+            A philosophy of community and environmental responsibility.</li>
+        </ol>
+        </div>
+      </div> 
+    <div class="rightFind">
+    <div class="FindStore">
+      <form>
+     <h3> Find a Store</h3>
+     <span class = "search_button"><input type ="text" name="coffehouse_findastore" id='E_address' placeholder=" Enter a location" maxlength="50">
+        <button type="submit"></button></span>
+      </form>
+    
+      <div class="jointwitter">
+      <ul>
+      <h3>Join the Conversation on Twitter</h3>
+      <li><strong>Starbucks Coffee Company</strong><a href="http://twitter.com/starbucks">@Starbucks</a></li>
+      <li><strong>Starbucks Careers</strong><a href="http://twitter.com/Starbucksjobs">@StarbucksJobs</a></li>
+      <li><strong>Starbucks Store</strong><a href="https://twitter.com/starbucksdeals">@StarbucksDeals</a></li>
+      <li><strong>Starbucks Rewards</strong><a href="https://twitter.com/starbucksgold">@StarbucksGold</a></li>
+      <li><strong>MyStarbucksIdea.com</strong><a href="http://twitter.com/MyStarbucksIdea">@MyStarbucksIdea</a></li>
+     </ul>
+     </div>
+    </div>
+    
+     <div class="FindOnline">
+        <h3> Find Us Online</h3>
+       <div class="Onlineimage">
+        <a href="http://www.facebook.com/starbucks"> 
+        <img src="contents/houseimg/coffee_facebook.png"></a>
+        <a href="http://www.youtube.com/starbucks"> 
+        <img src="contents/houseimg/coffee_youtube.png"></a>
+        <a href="http://www.twitter.com/starbucks/"> 
+        <img src="contents/houseimg/coffee_twitter.png"></a>
+        <br><br>
+        <a href="http://www.mystarbucksidea.com/">
+        <img src="contents/houseimg/coffee_mystarbucks.png"></a>
+        <a href="http://pinterest.com/starbucks/"> 
+        <img src="contents/houseimg/coffee_pinterest.png"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://plus.google.com/u/0/117575809843355974839/posts"> 
+        <img src="contents/houseimg/coffee_googleplus.png"></a>
+       </div>
+     </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+     <pp>Coffeehouse</pp>
+    </div>
+    <script src="footer/html.js"></script>
+</body>
+</html>

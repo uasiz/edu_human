@@ -1,0 +1,368 @@
+﻿<html>
+
+<head>
+    <title>starbucks sample test</title>
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+    <title>StarBucks</title>
+    <link rel="stylesheet" type="text/css" href="contents/css/coffee.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function () {
+            /* $("coffee1_button").hover(function () {
+                $(this).addClass('.over', 1500);
+            }, function () {
+                $(this).removeClass('.over', 1000);
+            }); */
+
+            $("#coffee1_contents").show(1000);
+
+            $("#coffee2").mouseenter(function () {
+                $("#coffee2_contents").show(1000);
+            })
+            $("#coffee3").mouseenter(function () {
+                $("#coffee3_contents").show(1000);
+            })
+
+            $("#coffee5").mouseenter(function () {
+                $("#coffee5_contents").show(1000);
+            })
+        })
+    </script>
+
+    <style>
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    height: 0px;
+    width: 0px;
+    clear: both;
+}
+ /* .over{
+    color:rgb(13, 163, 106);
+    background-color:  white;
+    box-shadow: 0 2px 2px 2px #ccc ;
+}  */
+
+#coffee{
+    width: 100%;
+}
+#coffee1{
+    height: 495px;
+    background-image: url('contents/img/first_M1.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px 495px;
+}
+
+#coffee2{
+    width: 2000px;
+    height: 490px;
+}
+#coffee2>div {
+    float: left;
+}
+#coffee3>div {
+    float: left;
+}
+#coffee5>div {
+    float: left;
+}
+#coffee3{
+    height: 430px;
+    width: 2000px;
+    background-image: url('contents/img/coffee3_reserve.jpg');
+    background-size: 2000px 540px;
+}
+#coffee4{
+    height: 70px;
+    color: #000000;
+}
+#coffee5{
+    height: 446px;
+    background-image: url('contents/img/coffee4_how_to_brew.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px 550px;
+}
+
+#coffee1_title{
+    padding-left: 120px;
+    padding-top: 110px;
+    width: 800px;
+    font-size: 38px;
+    color:#bfa971
+}
+#coffee1_contents{
+    display: none;
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 800px;
+    font-size: 20px;
+    color:#bfa971
+}
+#coffee1_button{
+    margin-left: 120px;
+    margin-top: 35px;
+    padding: 5px;
+    width: 150px;
+    border: solid 1px #bfa971;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    color:#bfa971
+}
+#coffee2_left{
+    display: inline-block;
+    width: 600px;
+    height: 490px;
+    
+}
+#coffee2_right{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 900px;
+    height: 490px;
+    
+}
+#coffee2_title{
+    padding-left: 120px;
+    padding-top: 135px;
+    width: 600px;
+    font-size: 38px;
+}
+#coffee2_contents{
+    display: none;
+    padding-left: 120px;
+    padding-top: 5px;
+    width: 600px;
+    font-size: 20px;
+}
+ 
+#coffee2_button1{
+    margin-left: 120px;
+    margin-top: 15px;
+    padding: 5px;
+    width: 150px;
+    font-size: 17px;
+    text-align: center;
+}
+#coffee2_button2{
+    margin-left: 120px;
+    margin-top: 15px;
+    padding: 5px;
+    width: 200px;
+    font-size: 17px;
+}
+#coffee2_imgBox{
+    
+    width: 545px;
+    height: 420px;
+    background-image: url('contents/img/coffee2_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+} 
+
+#coffee3_left{
+    display: inline-block;
+    padding-top: 100px;
+    width: 500px;
+}
+#coffee3_right{
+    width: 800px;
+    display: inline-block;
+    color: #ffffff;
+}
+#coffee3_imgBox{
+    width: 330px;
+    height: 260px;
+    background-image: url('contents/img/coffee3_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#coffee3_title{
+    padding-top: 70px;
+    width: 800px;
+    font-size: 38px;
+}
+#coffee3_contents{
+    display: none;
+    padding-top: 20px;
+    width: 800px;
+    font-size: 20px;
+}
+
+#coffee4_temp{
+    height: 70px;
+}
+
+#coffee5_left{
+    
+    color: #ffffff;
+}
+/* #coffee5_right{
+
+} */
+#coffee5_img{
+   padding-top: 40px;
+   padding-left: 100px;
+   height: 200px;
+}
+.coffee5_image{
+	/* margin-top:40px; */
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+#coffee5_image2{
+	width:120px;
+	height:120px;
+}
+#coffee5_title{
+    padding-left: 100px;
+    padding-top: 60px;
+    width: 800px;
+    font-size: 38px;
+}
+#coffee5_contents{
+    display: none;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 800px;
+    font-size: 20px;
+}
+    
+    </style>
+
+</head>
+
+<body>
+    
+
+    <div id="coffee">
+        <div id="coffee1">
+            <div id="coffee1_left">
+                <div id="coffee1_title">
+                    <p>
+                        <b>Almost heaven</b>
+                    </p>
+                </div>
+                <div id="coffee1_contents">
+                    <p>Grown high above the sea, surrounded by ancient</p>
+                    <p>volcanoes, this coffee is aptly named after the phrase casi</p>
+                    <p>cielo, Spanish for “almost heaven.” Enjoy this coffee’s unique</p>
+                    <p>brightness and rich cocoa finish now; it won’t be here long.</p>
+                </div>
+                <div id="coffee1_button">
+                    <a href="https://www.starbucks.com/store-locator" style="color:#bfa971">
+                        Find in a store</a>
+                </div>
+            </div>
+            <div id="coffee1_right"> 
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="coffee2">
+            <div id="coffee2_left">
+                <div id="coffee2_title">
+                    <p>
+                        <b>The Best Coffee. Starbucks</b>
+                    </p>
+                    <p>
+                        <b>Coffee Finder.</b>
+                    </p>
+                </div>
+                <div id="coffee2_contents">
+                    <p>Our coffee masters have distilled their years of tasting </p>
+                    <p>knowledge down to three simple questions to help you find a </p>
+                    <p>Starbucks coffee you’re sure to love.</p>
+                </div>
+                <div id="coffee2_button1">
+                    <a href="https://athome.starbucks.com/coffee-finder/">
+                        Explore our coffees</a>
+                </div>
+                <div id="coffee2_button2">
+                    <a href="https://athome.starbucks.com/coffee-finder/">
+                        Brouwse our coffees</a>
+                </div>
+            </div>
+            <div id="coffee2_right">
+                
+                <a href="https://athome.starbucks.com/coffee-finder/">
+                    <div id="coffee2_imgBox"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="coffee3">
+            <div id="coffee3_left">
+                <div id="coffee3_imgBox">
+                </div>
+                
+            </div>
+
+            <div id="coffee3_right">
+                <div id="coffee3_title">
+                    <p>OUR RAREST COFFEES, SMALL-</p>
+                    <p>BATCH ROASTED IN SEATTLE</p>
+                </div>
+                <div id="coffee3_contents">
+                    <p>We travel the world in search of great coffee. In the process, we</p>
+                    <p>discover beans so special and rare that we can’t wait to bring them </p>
+                    <p>home and share. Each of these small-lot coffees has its own story to </p>
+                    <p>tell, and we meticulously develop a signature roast for every one</p>
+                    <p>of them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="coffee4">
+            <div id="coffee_temp"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="coffee5">
+                
+            <div id="coffee5_left">
+                <div id="coffee5_title">
+                    <p>How to Brew-</p>
+                </div>
+                <div id="coffee5_contents">
+                    <p>It’s surprising how different brewing methods can enhance particular </p>
+                    <p>characteristics in your coffee. Let us help you unlock the full potential of</p>
+                    <p>your coffee—for the perfect cup every time.</p>
+                </div>
+                <div id="coffee5_img">
+                        <img class="coffee5_image" src="contents/img/coffee4_press.png">
+                        <img id="coffee5_image2" src="contents/img/coffee4_pourover.png">
+                        <img class="coffee5_image" src="contents/img/coffee4_icedpourover.png">
+                        <img class="coffee5_image" src="contents/img/coffee4_brewer.png">
+                    </div>
+            </div>
+
+            <div id="coffee5_right">
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body{margin:auto;}
+.footer-topall{float:left; width:100%; border-top: 5px solid #ffffff; border-bottom: 5px solid #ffffff; 
+            border-width:100%;  min-height: 190px; background: #f0f0f0; color:#382f2d; font-size:16px; line-height: 1;}
+
+.footer-top{width:1400px; margin:auto;}
+
+.social{float:left; width:40%; margin-top:60px;  margin-left: -40px; text-align:center;}
+ 
+  A:link {text-decoration:none;  color:#333333;}
+  A:visited {text-decoration:none; color:#333333;}
+  A:active {text-decoration:none; color:#333333; }
+  A:hover {text-decoration:none;  color:#333333; filter:opacity(0.6);}
+   
+.social img{margin-left:15px; width:40px; height:35px; color:#382f2d;}
+
+ .email{float:left; width:55%; margin:40px 0 40px 0; line-height:25px;}
+ .email A:link {text-decoration:none; border-bottom:1px dotted; font-weight:bold; color:#333333;}
+ .email A:visited {text-decoration:none; border-bottom:1px dotted;font-weight:bold; color:#333333;}
+ .email A:active {text-decoration:none; border-bottom:1px dotted; font-weight:bold; color:#333333;}
+ .email A:hover {text-decoration:none; border-bottom:1px dotted; font-weight:bold; color:#333333; filter:opacity(0.6);}
+  
+ 
+  
+ form input{width:250px; height: 23px; border-radius: 4px;} 
+ 
+.form_button button{width:180px; height:33px; color:#ffffff; font-size:15px; display:inline-block; 
+                    border-radius:7px; border:1px solid black; background-color: #302f2e; cursor:pointer;}
+  button:hover {text-decoration:none; filter:opacity(0.6);}
+
+.email_error{position: relative; margin-left:167px; background-color: #aa1e33; color:#ffffff; width:33%; display:none;}
+
+.footer-bodyall{float:left;  width:100%; background: #f7f7f7;   border-bottom: 8px solid #1d1b1b;}
+.footer-body{float:left;  width:100%;} 
+.footer-body-menu{margin: auto; width:1200px;}
+.footer-body li{list-style-type: none; margin-top: 18px;}
+.footerb1, .footerb2,.footerb3,.footerb4,.footerb5{float:left; margin-top:40px; }
+.footerb1 h4, .footerb2 h4,.footerb3 h4,.footerb4 h4,.footerb5 h4{margin-left: 38px;}
+
+.footerstarbuckslogo{float:left; margin-top:40px; margin-left:70px;}
+
+.footer-bottom{width:1200px; margin: auto;}
+.english ul li t{font-weight:bold;}
+.bottom,.footer_copyright{float:left; margin-top:20px; width:1200px; margin: auto;}
+.footer_copyright{float:left; font-size:13px; margin-bottom:70px;}
+
+ bar {color:#8a8885;}
+.clear{clear:both;}

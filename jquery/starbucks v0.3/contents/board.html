@@ -1,0 +1,178 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>starbucks</title>
+    <style>
+        body{
+            background-color:  #f7f7f7;
+        }
+        .board{
+            width:100%;
+            height:100%;
+        }
+        .board .header{
+            margin-left:10%;
+            width:80%;
+            height:80px;
+            border-bottom:1px solid #333;
+        }
+        .board .header h2{
+            float:left;
+        }
+        .board .header .newbtn{
+            float:right;
+            text-align:center;
+            color:white;
+            font-weight: bold;
+            background-color:  rgb(13, 163, 106);
+            box-shadow: 0 2px 8px 2px #ccc ;
+            width:100px;
+            line-height:70px;
+            border-radius: 50px ;
+        }
+        .board .header .newbtn.over{
+            color:rgb(13, 163, 106);
+            background-color:  white;
+            box-shadow: 0 2px 2px 2px #ccc ;
+        }
+        .board .report{
+            position:absolute;
+            display:none;
+            margin-left:50%;
+            width:40%;
+            height:500px;
+            box-shadow: 0 5px 5px 5px #ccc ;
+        }
+        .board .report input,.board .report textarea{
+            width:100%;
+            padding:0 10px 0 10px;
+            outline: none;/*커서 됬을때 파란선 없애기*/
+        }
+        .board .report .title{
+            height:10%;
+        }
+        .board .report .contents{
+            height:80%;
+        }
+        .board .report .enter{
+            height:10%;
+        }
+        .board .lists{
+            padding-top:50px;
+            margin-left:15%;
+            width:70%;
+        }
+        .board .lists .list{
+            height:50px;
+            line-height:50px;
+            cursor: pointer;
+        }
+        .board .lists .list div{
+            width:20%;
+            float:left;
+            text-align:center;
+            background-color: #f0f0f0;
+            border-radius: 10px ;
+        }
+        
+        .board .lists .list .writer{
+            width:15%;
+        }
+        .board .lists .list .title{
+            width:60%;
+        }
+        .board .lists .list .like{
+
+            width:5%;
+        }
+        .board .lists .list .view{
+            width:5%;
+        }
+        .board .lists .list .date{
+            width:15%;
+        }
+        .board .lists .list .contents{
+            display:none;
+            width:100%;
+            background-color: white;
+            box-shadow: 0 5px 5px 5px #ccc ;
+            border-radius: 0px ;
+            margin-bottom:20px;
+        }
+    </style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".board .header .newbtn").hover(function(){
+            $(this).addClass('over',1500);
+        },function(){
+            $(this).removeClass('over',1000);
+        });
+        $(".board .header .newbtn").click(function(){
+            //$(this).animate({'left':1000},2000,'easeInBack');
+            $(".board .report").slideToggle();
+        });
+        $(".list").on("click", function(e){
+            //console.log("jquery");
+            $(".list:nth-child("+($(this).index()+1)+") .contents").slideToggle();
+        });
+
+        $(".enter").click(function(){//리포트 작성 버튼
+            var dt=new Date();
+            addreport(0,$(".report .title").val(),$(".report .contents").val(),dt.getDate());
+            
+            $(".report .title").val("");
+            $(".report .contents").val("");
+            $(".board .report").slideToggle();
+        });
+    });
+    function list_click(no){
+        //console.log(no);
+           // console.log("javascript");
+            no++;
+            $(".list:nth-child("+no+") .contents").slideToggle();
+            //alert(menus[$(this).index()]);
+    }
+    function addreport(no,title,contents,date){
+        $( ".board .lists" ).append(
+            "<div class='list' onclick='list_click("+$(".list").length+")'><div class='writer'>you</div><div class='title'>"
+                +title
+                +"</div><div class='like'>0</div><div class='view'>0</div><div class='date'>"
+                    +date
+                    +"</div>"
+                    +"<div class='contents'>"
+                        +contents
+                        +"</div>"
+                    +"</div>"
+                    
+        );
+        //$( ".lists div:last-child" ).addClass('list').attr('id','L' ).hide().fadeIn(1000);
+    }
+
+</script>
+</head>
+<body>
+    <div class="board">
+        <div class='header'>
+                <h2>starbucks user board</h2>
+            <div class="newbtn">new</div>
+        </div>
+        <div class="report">
+                <input class="title" placeholder="title"></input>
+                <textarea class="contents" placeholder="contents"></textarea>
+                <input class="enter" type="button" value="write"></input>
+        </div>
+        <div class="lists">
+            <div class="list">
+                    <div class="writer">writer</div>
+                    <div class="title">title</div>
+                    <div class="like">like</div>
+                    <div class="view">view</div>
+                    <div class="date">date</div>
+                    <div class="contents">contetnts</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

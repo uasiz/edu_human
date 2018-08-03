@@ -1,0 +1,823 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+	body{
+	
+		background-color: #f7f7f7;
+	}
+        c {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            color: white;           
+            table-layout: fixed;
+            vertical-align: top;
+            font-size: 12px;
+        }
+        td {
+            vertical-align: top;
+        }   
+        .clear {
+            clear: both;
+            width: 0px;
+            height: 0px;;
+        }        
+        #wrap {
+            position: relative;
+            width: 1300px;
+            left: 50%;
+            margin-left: -650px;
+        }
+        #topline {
+            width: 100%;
+            height: 10px;
+            background-color: #006341;
+        }
+        header {
+            width: 1300px;
+            height: 100px;
+            background-color: #f7f7f7;
+        }
+        header#logo {
+            width: 100px;
+            height: 100px;
+            float: left;
+            display: table;            
+        }
+        header#right{
+            width: 1200px;
+            height: 100px;
+            float: right;
+        }
+        header#right #top{
+            width: 1200px;
+            height: 50px;
+            text-align: right;
+            display: table-cell;
+            vertical-align: middle;               
+            position: relative;      
+        }       
+        header#right #bottom{
+            width: 1200px;
+            height: 50px;
+            height: 50px;
+            display: table;           
+            position: relative;             
+        }
+        header#right #bottom #coffee {
+            float: left;
+            width: 10%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #coffee:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #tea {
+            float: left;
+            width: 7%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #tea:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #menu {
+            float: left;
+            width: 8%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #menu:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #coffeehouse {
+            float: left;
+            width: 15%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #coffeehouse:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #social {
+            float: left;
+            width: 15%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #social:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #rewards {
+            float: left;
+            width: 18%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #rewards:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #blog {
+            float: left;
+            width: 10%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #blog:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        header#right #bottom #gift {
+            float: left;
+            width: 17%;
+            height: 50px;
+            background-color: #f7f7f7;   
+            line-height: 300%;
+            text-align: center;         
+        }
+        header#right #bottom #gift:hover{
+            background-color: #1e1e1e;
+            color: #f7f7f7;           
+        }
+        #header_coffee {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 500px;
+            background-color: #1e1e1e;
+            display: none;     
+        }
+        #header_tea {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 440px;
+            background-color: #1e1e1e; 
+            display: none;   
+        }
+        #header_menu {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 310px;
+            background-color: #1e1e1e;   
+            display: none;         
+        }
+        #header_coffeehouse {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 370px;
+            background-color: #1e1e1e;
+            display: none;
+        }
+        #header_socialimpact {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 500px;
+            background-color: #1e1e1e;  
+            display: none;
+        }
+        #header_starbucksrewards {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 190px;
+            background-color: #1e1e1e;  
+            display: none;
+        }
+        #header_blog {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height:170px;
+            background-color: #1e1e1e; 
+            display: none; 
+        }
+        #header_giftcards {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 210px;
+            background-color: #1e1e1e;  
+            display: none;
+        }
+    </style>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>   
+$(document).ready(function() {
+    
+    $("#coffee").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_coffee').stop() 
+        $("#header_coffee").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_coffee').stop() 
+            $("#header_coffee").slideUp("fast");
+    })
+
+    $("#header_coffee").hover(function() {
+        $("#coffee").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_coffee').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#coffee").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_coffee').stop() 
+            $(this).slideUp("fast");
+        })
+
+    $("#tea").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_tea').stop() 
+        $("#header_tea").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_tea').stop() 
+            $("#header_tea").slideUp("fast");
+    })
+
+    $("#header_tea").hover(function() {
+        $("#tea").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_tea').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#tea").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_tea').stop() 
+            $(this).slideUp("fast");
+        })    
+
+    $("#menu").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_menu').stop() 
+        $("#header_menu").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_menu').stop() 
+            $("#header_menu").slideUp("fast");
+    })
+
+    $("#header_menu").hover(function() {
+        $("#menu").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_menu').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#menu").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_menu').stop() 
+            $(this).slideUp("fast");
+        })    
+
+    $("#coffeehouse").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_coffeehouse').stop() 
+        $("#header_coffeehouse").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_coffeehouse').stop() 
+            $("#header_coffeehouse").slideUp("fast");
+    })
+
+    $("#header_coffeehouse").hover(function() {
+        $("#coffeehouse").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_coffeehouse').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#coffeehouse").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_coffeehouse').stop() 
+            $(this).slideUp("fast");
+        })
+
+    $("#social").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_socialimpact').stop() 
+        $("#header_socialimpact").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_socialimpact').stop() 
+            $("#header_socialimpact").slideUp("fast");
+    })
+
+    $("#header_socialimpact").hover(function() {
+        $("#social").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_socialimpact').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#social").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_socialimpact').stop() 
+            $(this).slideUp("fast");
+        }) 
+
+    $("#rewards").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_starbucksrewards').stop() 
+        $("#header_starbucksrewards").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_starbucksrewards').stop() 
+            $("#header_starbucksrewards").slideUp("fast");
+    })
+
+    $("#header_starbucksrewards").hover(function() {
+        $("#rewards").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_starbucksrewards').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#rewards").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_starbucksrewards').stop() 
+            $(this).slideUp("fast");
+    })   
+
+    $("#blog").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_blog').stop() 
+        $("#header_blog").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_blog').stop() 
+            $("#header_blog").slideUp("fast");
+    })
+
+    $("#header_blog").hover(function() {
+        $("#blog").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_blog').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#blog").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_blog').stop() 
+            $(this).slideUp("fast");
+    })
+
+    $("#gift").hover(function() {
+        $(this).css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_giftcards').stop() 
+        $("#header_giftcards").slideDown("fast").css("display", "block")},
+        
+        function() {
+            $(this).css({backgroundColor: "#f7f7f7",
+                        color: "#1e1e1e"})
+            $('#header_giftcards').stop() 
+            $("#header_giftcards").slideUp("fast");
+    })
+
+    $("#header_giftcards").hover(function() {
+        $("#gift").css({backgroundColor: "#1e1e1e",
+                     color: "#f7f7f7"})
+        $('#header_giftcards').stop() 
+        $(this).slideDown("display", "block")},
+
+        function() {
+            $("#gift").css({backgroundColor: "#f7f7f7",
+                              color: "#1e1e1e"})
+            $('#header_giftcards').stop() 
+            $(this).slideUp("fast");
+    })
+
+    $("#searchInput").focus(function() {
+        $(this).css({backgroundColor: "lightgreen",
+                    border: "2px solid black"});
+    });
+
+    $("#searchInput").blur(function() {
+        $(this).css({backgroundColor: "white",
+                    border: "1px solid gray"});
+    }); 
+    
+
+})
+
+</script>
+</head>
+
+<body>
+    <header>     
+        <header id="logo"><c><img src="image\h_logo1.png"></c></header>
+        <header id="right">
+            <div class="clear"></div>
+            <div id="top"><img src="image\h_gps2.png">&nbsp;&nbsp;Find a Stroe &nbsp; |&nbsp; Sign in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" placeholder="Search this site" id="searchInput">&nbsp;<img src="image\h_point.png">&nbsp;&nbsp;&nbsp;</div>
+            <div id="bottom">
+                <div id="coffee">COFFEE</div>
+                <div id="tea">TEA</div>
+                <div id="menu">MENU</div>
+                <div id="coffeehouse">COFFEEHOUSE</div>
+                <div id="social">SOCIAL IMPACT</div>
+                <div id="rewards">STARBUCKS REWARD</div>
+                <div id="blog">BLOG</div>
+                <div id="gift">GIFT CARD</div>
+            </div>
+        </header>
+    </header>
+    <div id="header_coffee">
+        <table>
+            <tr>
+                <td><br>&nbsp;&nbsp;<b>Our Coffees</b><br>
+                    &nbsp;&nbsp;Whole Bean and Ground Coffe<br>
+                    &nbsp;&nbsp;Starbucks K-Cup Pods<br>
+                    &nbsp;&nbsp;Verismo Pods<br>
+                    &nbsp;&nbsp;Starbucks Reserve Coffee<br>
+                    &nbsp;&nbsp;Starbucks VIA
+                </td>
+                <td><br>&nbsp;&nbsp;<b>Find Your Perfect Coffee</b></td>
+                <td><br><b>&nbsp;&nbsp;Starbucks Reserve Roastery &#38;<br>
+                    &nbsp;&nbsp;Tasting Room</b><br>
+                    &nbsp;&nbsp;Starbucks Reserve Coffee
+                </td>
+                <td rowspan="2"><br><b>&nbsp;&nbsp;Espresso Beverages</b><br>
+                    &nbsp;&nbsp;Latte Macchiato<br>
+                    &nbsp;&nbsp;Doppio<br>
+                    &nbsp;&nbsp;Americano<br>
+                    &nbsp;&nbsp;Espresso Macchiato<br>
+                    &nbsp;&nbsp;Flat White<br>
+                    &nbsp;&nbsp;Cappuccino<br>
+                    &nbsp;&nbsp;Latte<br>
+                    &nbsp;&nbsp;Caramel Macchiato<br>
+                    &nbsp;&nbsp;Mocha<br><br>
+                    &nbsp;&nbsp;<b>Cold Brew Coffee</b></td>
+                <td rowspan="3" background="image\h_pattern_stars.png"> <br>&nbsp;
+                    <br>&nbsp;&nbsp;<img src="image\h_coffee.PNG"><br>&nbsp;&nbsp;<b>Share a cup</b><br>
+                    &nbsp;&nbsp;With its vibrant<br>
+                    &nbsp;&nbsp;cedary-spice notes,<br>
+                    &nbsp;&nbsp;this blend-which<br>
+                    &nbsp;&nbsp;includes our expertly<br>
+                    &nbsp;&nbsp;aged Sumatran coffee<br>
+                    &nbsp;&nbsp;-pairs well with<br>
+                    &nbsp;&nbsp;holiday flavors and<br>
+                    &nbsp;&nbsp;good compant.<br>
+                    &nbsp;&nbsp;Find a store</td>
+            </tr>
+            <tr>
+                <td><br>&nbsp;&nbsp;<b>How to Brew Great Coffee</b><br>
+                    &nbsp;&nbsp;Coffee Press<br>
+                    &nbsp;&nbsp;Pour-Over<br>
+                    &nbsp;&nbsp;Iced Pour-Over<br>
+                    &nbsp;&nbsp;Coffee Brewer<br>
+                    &nbsp;&nbsp;Verismo System<br><br>
+                    &nbsp;&nbsp;<b>1912 Pike Blog</b></td>
+                <td><br>&nbsp;&nbsp;<b>Ethical Sourcing</b><br>
+                    &nbsp;&nbsp;Coffee<br>
+                    &nbsp;&nbsp;Farming Communities</td>
+                <td><br>&nbsp;&nbsp;<b>Learn More</b><br>
+                    &nbsp;&nbsp;Starbucks At Home<br>
+                    &nbsp;&nbsp;Flavors in Your Cup<br>
+                    &nbsp;&nbsp;The Clover Brewing System<br>
+                    &nbsp;&nbsp;My Starbucks Idea</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="border-top:1px solid gray;"><br>&nbsp;&nbsp;<b>Looking for Coffee Beverages?</b><br>
+                    &nbsp;&nbsp;Freshlt Brewed Coffee &nbsp; Starbucks Espresso Beverages &nbsp; Frappuccino Blended Beverages</td>
+        </table>
+    </div>
+    <div id="header_tea">
+        <table>
+            <tr>
+                <td><br>&nbsp;&nbsp;<b>Handcrafted Teas</b>
+                    <br>&nbsp;&nbsp;Iced Teas
+                    <br>&nbsp;&nbsp;Iced TEa Infusions
+                    <br>&nbsp;&nbsp;Tea Lattes
+                    <br>&nbsp;&nbsp;Brewed Teas
+                    <br>&nbsp;&nbsp;Bottled Craft Iced Tea
+                    <br>&nbsp;&nbsp;Nutrition
+                    <br>&nbsp;&nbsp;All Handcrafted Teas</td>
+                <td><br>&nbsp;&nbsp;<b>Tea Favorites</b>
+                    <br>&nbsp;&nbsp;Matcha
+                    <br>&nbsp;&nbsp;Iced Tea at Home
+                    <br>&nbsp;&nbsp;Tea Filled Tins
+                    <br>&nbsp;&nbsp;Tea Samplers
+                    <br>&nbsp;&nbsp;Wellness Tea
+                    <br>&nbsp;&nbsp;All Teas</td>
+                <td><br>&nbsp;&nbsp;<b>Loose-Leaf Teas</b>
+                    <br>&nbsp;&nbsp;Black Tea
+                    <br>&nbsp;&nbsp;Green Tea
+                    <br>&nbsp;&nbsp;White Tea
+                    <br>&nbsp;&nbsp;Herbal Tea
+                    <br>&nbsp;&nbsp;Chai Tea
+                    <br>&nbsp;&nbsp;Rooibos Tea
+                    <br>&nbsp;&nbsp;Oolong Tea
+                    <br>&nbsp;&nbsp;All Loose-Leaf Teas</td>
+                <td><br>&nbsp;&nbsp;<b>Teaware</b>
+                    <br>&nbsp;&nbsp;Tea Starter Kits
+                    <br>&nbsp;&nbsp;Teavana Perfectea Makers
+                    <br>&nbsp;&nbsp;Rock Sugar
+                    <br>&nbsp;&nbsp;Tumbler Cups
+                    <br>&nbsp;&nbsp;Breville Tea Makers
+                    <br>&nbsp;&nbsp;Tea Infuses
+                    <br>&nbsp;&nbsp;Tea Makers
+                    <br>&nbsp;&nbsp;All Teaware</td>
+                <td rowspan="2" background="image\h_pattern_stars.png"><br>&nbsp;
+                <img src="image\h_tea.PNG">
+                <br>&nbsp;&nbsp;<b>Seasonal Chai</b>
+                <br>&nbsp;&nbsp;The new Teavana
+                <br>&nbsp;&nbsp;Chestnut Praline Chai
+                <br>&nbsp;&nbsp;Latte has a dash of 
+                <br>&nbsp;&nbsp;&nbsp;caramelized Chestnut
+                <br>&nbsp;&nbsp;flavor and a Chestnut
+                <br>&nbsp;&nbsp;praline topping.
+                <br><br>&nbsp;&nbsp;Details >
+            </td>
+            </tr>
+            <tr>
+                <td><br>&nbsp;&nbsp;<b>Gifts</b>
+                    <br>&nbsp;&nbsp;Tea Samplers
+                    <br>&nbsp;&nbsp;Tea Gift Sets
+                    <br>&nbsp;&nbsp;Tea Starter Kits
+                    <br>&nbsp;&nbsp;Tea Gifts under $25
+                    <br>&nbsp;&nbsp;Tea Gifts under $50
+                    <br>&nbsp;&nbsp;Tea Gifts under $75
+                    <br>&nbsp;&nbsp;Tea Gifts under $100
+                    <br>&nbsp;&nbsp;All Tea Gifts
+                </td>
+                <td><br>&nbsp;&nbsp;<b>Kearn More</b>
+                    <br>&nbsp;&nbsp;Nixology
+                    <br>&nbsp;&nbsp;Matcha
+                    <br>&nbsp;&nbsp;Tea 101
+                    <br>&nbsp;&nbsp;About Teavana</td>
+                <td><br>&nbsp;<b>New Arrivals</b></td>
+                <td><br>&nbsp;<b>Sale</b></td>
+            </tr>
+        </table>
+    </div>
+    <div id="header_menu">
+            <table border="0">
+                <tr>
+                    <td><br>
+                        &nbsp;&nbsp;<b>Drinks</b><br>
+                        &nbsp;&nbsp;Bottled Drinks<br>
+                        &nbsp;&nbsp;Freshly Brewed coffee<br>
+                        &nbsp;&nbsp;Cold Brew and iced coffee<br>
+                        &nbsp;&nbsp;Evolution Fresh<sup>TM</sup><br>
+                        &nbsp;&nbsp;Chocolate Beverages<br>
+                        &nbsp;&nbsp;Espresso Beverages<br>
+                        &nbsp;&nbsp;Frappuccino® Blended Beverages<br>
+                        &nbsp;&nbsp;Smoothies<br>
+                        &nbsp;&nbsp;Fizzio<sup>TM</sup> Handcrafted Sodas<br>
+                        &nbsp;&nbsp;Starbucks Refreshers<sup>TM</sup> Beverages<br>
+                        &nbsp;&nbsp;Teas
+                    </td>
+                    <td><br>
+                            &nbsp;&nbsp;<b>Food</b><br>
+                            &nbsp;&nbsp;Bakery<br>
+                            &nbsp;&nbsp;Starbucks Petites<br>
+                            &nbsp;&nbsp;Protein Boxes & Bowls<br>
+                            &nbsp;&nbsp;Hot Breakfast<br>
+                            &nbsp;&nbsp;Sandwiches & Paninis<br>
+                            &nbsp;&nbsp;Yogurt, Fruit & Spreads<br>
+                            &nbsp;&nbsp;Starbucks Snack Collection<br>
+                            &nbsp;&nbsp;Starbucks Mercato
+                    </td>
+                    <td><br>
+                            &nbsp;&nbsp;<b>Nutrition</b><br>
+                            &nbsp;&nbsp;Food Nutrition<br>
+                            &nbsp;&nbsp;Drink Nutrition<br>
+                            &nbsp;&nbsp;Delicious Drinks Under 200 Calories<br>
+                            &nbsp;&nbsp;Favorite Foods Under 350 Calories
+                    </td>
+                    <td><br>
+                            &nbsp;&nbsp;<b>Learn More</b><br>
+                            &nbsp;&nbsp;My Starbucks Idea<br>
+                            &nbsp;&nbsp;Menu FAQs
+                            &nbsp;&nbsp;</td>
+                    <td background="image/h_pattern_stars.png">
+                        <br>&nbsp;&nbsp;<img src="image/h_menu.png"><br>
+                        &nbsp;&nbsp;<b>It's back</b><br>
+                        &nbsp;&nbsp;The best-loved holiday<br>
+                        &nbsp;&nbsp;flavors are layered<br>
+                        &nbsp;&nbsp;together and warmed<br>
+                        &nbsp;&nbsp;to perfection on our<br>
+                        &nbsp;&nbsp;Holiday Turkey <br>
+                        &nbsp;&nbsp;Stuffing Panini.<br><br>
+                        &nbsp;&nbsp;See more 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="header_coffeehouse">
+        <table>
+            <tr>
+                <td><br>
+                    &nbsp;&nbsp;<b>Wi-Fi</b><br>
+                    &nbsp;&nbsp;Starbucks Digital Network<br>
+                </td>
+                <td><br>
+                        &nbsp;&nbsp;<b>Starbucks Mobile</b><br>
+                        &nbsp;&nbsp;Starbucks® App for iPhone®<br>
+                        &nbsp;&nbsp;Starbucks® App for Android®<br>
+                        &nbsp;&nbsp;Starbucks® App for Windows® 10<br>
+                        &nbsp;&nbsp;Mobile Order & Pay<br>
+                        &nbsp;&nbsp;Delivery<br>
+                        &nbsp;&nbsp;Starbucks Music<br>
+                </td>
+                <td><br>
+                        &nbsp;&nbsp;<b>Online Community</b><br>
+                        &nbsp;&nbsp;MyStarbucksidea.com<br>
+                        &nbsp;&nbsp;Social Media Terms and Conditions<br>
+                </td>
+                <td><br>
+                        &nbsp;&nbsp;<b>Store Design</b><br>
+                <td rowspan="3" background="image/h_pattern_stars.png">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><br>
+                    &nbsp;&nbsp;<b>Learn More</b><br>
+                    &nbsp;&nbsp;My Starbucks Idea<br>
+                    &nbsp;&nbsp;Coffeehouse FAQs<br>
+                    &nbsp;&nbsp;Store Locator
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="border-top:1px solid gray;"><br>
+                    &nbsp;&nbsp;<b>Looking for Something Else?</b><br>
+                    &nbsp;&nbsp;Starbucks Drinks &nbsp;&nbsp;&nbsp;About Us &nbsp;&nbsp;&nbsp;Coffee
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="header_socialimpact">
+            <table>
+                <tr>
+                    <td><br>&nbsp;&nbsp;<b>Community</b><br>
+                        &nbsp;&nbsp;Refugee Hiring<br>
+                        &nbsp;&nbsp;Opportunity for Youth<br>
+                        &nbsp;&nbsp;Starbucks Foundation<br>
+                        &nbsp;&nbsp;Community Service<br>
+                        &nbsp;&nbsp;Veterans and Military Support<br>
+                        &nbsp;&nbsp;Diversity and Inclusion<br>
+                        &nbsp;&nbsp;Farming Communities<br>
+                        &nbsp;&nbsp;Our Hometown<br>
+                        &nbsp;&nbsp;(STARBUCKS)RED<br>
+                        &nbsp;&nbsp;Foodshare
+                    </td>
+                    <td><br>&nbsp;&nbsp;<b>Ethical Sourcing</b>
+                        <br>&nbsp;&nbsp;Supplier Diversity Program
+                        <br>&nbsp;&nbsp;Coffee
+                        <br>&nbsp;&nbsp;Tea
+                        <br>&nbsp;&nbsp;Cocoa 
+                        <br>&nbsp;&nbsp;Manufactured Goods
+                    </td>
+                    <td><br><b>Environment</b>
+                        <br>Greener Stores
+                        <br>Greener Cup
+                        <br>Water and Energy Conservation
+                        <br>Climate Change                
+                    </td>
+                    <td><br><B>&nbsp;&nbsp;Global Responsibility Report Goals<br>
+                        &nbsp;&nbsp;Progress</B>
+                    </td>
+                    <td rowspan="3" background="image\h_pattern_stars.png">
+                        <br>&nbsp;&nbsp;<img src="image\h_social_impact.png">
+                        <br>&nbsp;&nbsp;See What Happens
+                        <br>&nbsp;&nbsp;when veterans,
+                        <br>&nbsp;&nbsp;military spouses and
+                        <br>&nbsp;&nbsp;civilians work
+                        <br>&nbsp;&nbsp;together every day.
+                        <br>&nbsp;&nbsp;Watch >
+                    </td>
+                    <tr>
+                        <td colspan="4">
+                            <br>&nbsp;&nbsp;<b>Learn More</b>
+                            <br>&nbsp;&nbsp;College Plan
+                            <br>&nbsp;&nbsp;Conflict Minerals Disclosure
+                            <br>&nbsp;&nbsp;Relationships
+                            <br>&nbsp;&nbsp;Policies
+                            <br>&nbsp;&nbsp;CA Supply Chains Act
+                            <br>&nbsp;&nbsp;Community Investment FAQs
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="border-top:1px solid gray;">
+                            <br>&nbsp;&nbsp;<b>Looking for Starbucks Information?</b>
+                            <br>&nbsp;&nbsp;About Us &nbsp;&nbsp; Coffee &nbsp;&nbsp; Small Changes Add Up to a Big Impact 
+                        </td>
+                    </tr>
+            </table>
+    </div>
+    <div id="header_starbucksrewards">
+        <table>
+            <tr>
+                <td><b><br>&nbsp;&nbsp;Starbucks rewards</b>
+                    <br>&nbsp;&nbsp;Join Starbucks rewards
+                    <br>&nbsp;&nbsp;View Your Stars
+                    <br>&nbsp;&nbsp;Current Members
+                    <br>&nbsp;&nbsp;rewards Program Terms of Use
+                    <br>&nbsp;&nbsp;Enter a Star Code
+                </td>
+            </tr>
+        </table>        
+    </div>  
+    <div id="header_blog">
+        <table>
+            <tr>
+                <td><B><br>&nbsp;&nbsp;Originals</B>
+                    <br>&nbsp;&nbsp;Upstanders
+                    <br>&nbsp;&nbsp;Veterans
+                    <br>&nbsp;&nbsp;1912 Pike
+                    <br>&nbsp;&nbsp;Women in Coffee</td>
+                <td colspan="3">
+                    <b><br>&nbsp;&nbsp;About</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="header_giftcards">
+        <table>
+            <tr>
+                <td><b><br>&nbsp;&nbsp;Buy a Card</b>
+                    <br>&nbsp;&nbsp;Give a gift by Email
+                    <br>&nbsp;&nbsp;Give a gift by Mail
+                    <br>&nbsp;&nbsp;Gift cards for Businesses
+                    <br>&nbsp;&nbsp;Check Gift Card Balance
+                    <br>&nbsp;&nbsp;eGift Support
+                </td>
+                <td colspan="3">
+                    <b><br>&nbsp;&nbsp;Manage Your Card</b>
+                    <br>&nbsp;&nbsp;Check Balance
+                    <br>&nbsp;&nbsp;Reload Your Card
+                    <br>&nbsp;&nbsp;Transfer Funds
+                    <br>&nbsp;&nbsp;View Transactions
+                    <br>&nbsp;&nbsp;Report Lost/Stoken
+                    <br>&nbsp;&nbsp;Card Terms and Conditions
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
